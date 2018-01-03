@@ -31,7 +31,7 @@ class Workspace extends React.Component {
   }
 
   exampleInput(){
-    this.setState({input: '# Markdown previewer\n\nIn this simple Markdown previewer you can easily preview your *Markdown* as you  ~~write~~ **type**.\n\nFeatures:\n* instant preview\n* simple interface\n\n**Bonus tip:** Click on the light bulb to toggle between day and night version.\n\n'});
+    this.setState({input: '# Markdown previewer\n\nIn this simple Markdown previewer you can easily preview your *Markdown* as you  ~~write~~ **type**.\n\nFeatures:\n* instant preview\n* simple interface\n\n**Bonus tip:** Click on the light bulb to toggle between day and night version.\n\n '});
   }
 
   handleInputChange(e){
