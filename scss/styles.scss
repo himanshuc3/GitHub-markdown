@@ -1,0 +1,253 @@
+/*****************************
+* Head Styles
+*****************************/    
+
+.head {
+    width: #{$full}vw;
+    margin-bottom: 60px;
+
+    .title{
+        padding:{
+            left: 400px;
+            top: 20px
+        }
+
+        width: #{$full/2}vw;
+        display: $disp;
+        }
+  
+    & .title #github-icon {
+        width: $forty;
+        height: $forty;
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+        }
+    & .title h1 {
+        display: $disp;
+        padding-left: $forty/2 ;
+        font-family: 'Encode Sans Expanded', sans-serif;
+        font-weight: #{$full};
+        font-size: $forty;  
+        }
+    }      
+  
+ /*****************************
+* Animation Hearbeat 
+*****************************/  
+
+   @-webkit-keyframes heartbeat {
+          from {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-transform-origin: center center;
+                    transform-origin: center center;
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+          10% {
+            -webkit-transform: scale(0.91);
+                    transform: scale(0.91);
+            -webkit-animation-timing-function: ease-in;
+                    animation-timing-function: ease-in;
+          }
+          17% {
+            -webkit-transform: scale(0.98);
+                    transform: scale(0.98);
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+          33% {
+            -webkit-transform: scale(0.87);
+                    transform: scale(0.87);
+            -webkit-animation-timing-function: ease-in;
+                    animation-timing-function: ease-in;
+          }
+          45% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+        }
+        @keyframes heartbeat {
+          from {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-transform-origin: center center;
+                    transform-origin: center center;
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+          10% {
+            -webkit-transform: scale(0.91);
+                    transform: scale(0.91);
+            -webkit-animation-timing-function: ease-in;
+                    animation-timing-function: ease-in;
+          }
+          17% {
+            -webkit-transform: scale(0.98);
+                    transform: scale(0.98);
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+          33% {
+            -webkit-transform: scale(0.87);
+                    transform: scale(0.87);
+            -webkit-animation-timing-function: ease-in;
+                    animation-timing-function: ease-in;
+          }
+          45% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+        }
+/*****************************
+* Animation Hearbeat end
+*****************************/       
+  
+/*****************************
+* Colors up top
+*****************************/ 
+
+  #colors{
+
+    width: #{$full/2}vw;
+    height: 70px;
+    padding:{
+        top: $forty;
+        left: 80px;
+    }
+    margin-top: 0;
+    display: $disp;
+    float: right;
+
+    ul  {
+        padding-top:0;
+        margin-top: 0;
+    }
+
+    & ul li{
+        display: $disp;
+        list-style: none;
+        width: $forty/2;
+        height: $forty/2;
+        background-color: black;
+        padding-left: $forty/2;
+        margin-left: $forty;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    & #theme2{
+            background-color: rgb(139, 214, 18);
+    }
+    & #theme3{
+        background-color: rgba(11, 236, 236, 1);
+        }
+  }   
+  
+  
+/*****************************
+* Main workspace
+*****************************/   
+  
+  
+  .workspace{
+
+    width:60vw;
+    margin:$forty/2 auto;
+
+    & .edit{
+        display: $disp;
+        float: left;
+    }
+
+    textarea {
+
+        resize: none; 
+        width: 30vw;
+        height: 500px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: $forty/2;
+        font-size:15px;
+        border:0px solid black;
+    }
+
+    textarea:focus, input:focus{
+
+        outline: none;
+    }
+    
+    .markdown{
+        height: 500px;
+        width:30vw;
+        background-color: rgba(200,234,234,0);
+        display: $disp;
+        float: right;
+        overflow: scroll;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 20px;
+        font-size: 15px;
+    }
+  
+  }
+  
+
+  
+
+/*****************************
+* Footer Styles
+*****************************/     
+  
+  .footer{
+      padding-top:20px;
+      text-align: center;
+      letter-spacing: .15em;  
+      font:{
+        family: 'Encode Sans Expanded', sans-serif;
+        weight: 100;
+        size: 14px;
+      }
+  }
+  
+  .footer a{
+      text-decoration: none;
+      color: rgb(44, 44, 168);
+      font-weight: bolder;
+      font-size: 20px;
+      border-bottom:5px solid yellow;
+  }
+  
+  .color-change-2x {
+      -webkit-animation: color-change-2x 10s ease-out infinite alternate-reverse both;
+              animation: color-change-2x 10s ease-out infinite alternate-reverse both;
+  }
+  
+/*****************************
+* Background color change
+*****************************/ 
+
+   @-webkit-keyframes color-change-2x {
+          0% {
+            background: #19dcea;
+          }
+          100% {
+            background: #b22cff;
+          }
+        }
+        @keyframes color-change-2x {
+          0% {
+            background: #19dcea;
+          }
+          100% {
+            background: #b22cff;
+          }
+        }
+
+/*****************************
+* The end 
+*****************************/
