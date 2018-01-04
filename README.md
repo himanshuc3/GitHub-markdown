@@ -7,5 +7,6 @@ Developtment Dependencies are :
   3. marked - A node.js package parsing library for parsing different markdown syntaxes.
   4. jest - A testing library for react by facebook.
   5. Enzyme - A testing library for react by Airbnb.
+  6. Prettier - A library for maintaining consistent code style in javascript, sass etc.
   
   
